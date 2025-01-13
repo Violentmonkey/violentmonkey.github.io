@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="google-site-verification" content="OKMYmcVuMfm9H_UjfNXPzRb2c0QoBtmZ7v1KwHNXnRQ"><link rel="icon" type="image/png" href="/_astro/vm.C4h557K-.png"><meta name="generator" content="Astro v5.1.5"><title>Smart rules for blacklist - Violentmonkey</title><script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-2E0X3LSCBM"></script> <script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-2E0X3LSCBM');
+</script><link rel="stylesheet" href="/_astro/_path_.BBgV8g_f.css">
+<style>aside[data-astro-cid-ssfzsv2f]{position:fixed;top:var(--nav-height);left:0;bottom:0;z-index:20;width:var(--aside-width);--un-translate-x:-100%;transform:translate(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotate(var(--un-rotate-z)) skew(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z));border-right-width:1px;--un-border-opacity:1;border-color:rgb(229 231 235 / var(--un-border-opacity));--un-bg-opacity:1;background-color:rgb(255 255 255 / var(--un-bg-opacity));transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}aside[data-astro-cid-ssfzsv2f] a[data-astro-cid-ssfzsv2f]:not(.active):not(:hover){--un-text-opacity:1;color:rgb(107 114 128 / var(--un-text-opacity))}@media (min-width: 1024px){aside[data-astro-cid-ssfzsv2f]{position:sticky;grid-row-start:1;grid-row-end:3;max-height:calc(100vh - var(--nav-height));--un-translate-x:0;transform:translate(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotate(var(--un-rotate-z)) skew(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z));border-style:none;transition:none}}aside[data-astro-cid-ssfzsv2f]:target{--un-translate-x:0;--un-translate-y:0;transform:translate(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotate(var(--un-rotate-z)) skew(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z))}aside[data-astro-cid-ssfzsv2f] .backdrop[data-astro-cid-ssfzsv2f]{display:none;font-size:0}aside[data-astro-cid-ssfzsv2f]:target .backdrop[data-astro-cid-ssfzsv2f]{position:absolute;top:0;bottom:0;left:100%;display:block;width:100vw;background-color:#a1a1aacc}@media (min-width: 1024px){aside[data-astro-cid-ssfzsv2f]:target .backdrop[data-astro-cid-ssfzsv2f]{display:none}}
+</style><script>!(function(w,p,f,c){if(!window.crossOriginIsolated && !navigator.serviceWorker) return;c=w[p]=Object.assign(w[p]||{},{"lib":"/~partytown/","debug":false});c[f]=(c[f]||[]).concat(["dataLayer.push"])})(window,'partytown','forward');/* Partytown 0.11.0 - MIT QwikDev */
+const t={preserveBehavior:!1},e=e=>{if("string"==typeof e)return[e,t];const[n,r=t]=e;return[n,{...t,...r}]},n=Object.freeze((t=>{const e=new Set;let n=[];do{Object.getOwnPropertyNames(n).forEach((t=>{"function"==typeof n[t]&&e.add(t)}))}while((n=Object.getPrototypeOf(n))!==Object.prototype);return Array.from(e)})());!function(t,r,o,i,a,s,c,l,d,p,u=t,f){function h(){f||(f=1,"/"==(c=(s.lib||"/~partytown/")+(s.debug?"debug/":""))[0]&&(d=r.querySelectorAll('script[type="text/partytown"]'),i!=t?i.dispatchEvent(new CustomEvent("pt1",{detail:t})):(l=setTimeout(v,(null==s?void 0:s.fallbackTimeout)||1e4),r.addEventListener("pt0",w),a?y(1):o.serviceWorker?o.serviceWorker.register(c+(s.swPath||"partytown-sw.js"),{scope:c}).then((function(t){t.active?y():t.installing&&t.installing.addEventListener("statechange",(function(t){"activated"==t.target.state&&y()}))}),console.error):v())))}function y(e){p=r.createElement(e?"script":"iframe"),t._pttab=Date.now(),e||(p.style.display="block",p.style.width="0",p.style.height="0",p.style.border="0",p.style.visibility="hidden",p.setAttribute("aria-hidden",!0)),p.src=c+"partytown-"+(e?"atomics.js?v=0.11.0":"sandbox-sw.html?"+t._pttab),r.querySelector(s.sandboxParent||"body").appendChild(p)}function v(n,o){for(w(),i==t&&(s.forward||[]).map((function(n){const[r]=e(n);delete t[r.split(".")[0]]})),n=0;n<d.length;n++)(o=r.createElement("script")).innerHTML=d[n].innerHTML,o.nonce=s.nonce,r.head.appendChild(o);p&&p.parentNode.removeChild(p)}function w(){clearTimeout(l)}s=t.partytown||{},i==t&&(s.forward||[]).map((function(r){const[o,{preserveBehavior:i}]=e(r);u=t,o.split(".").map((function(e,r,o){var a;u=u[o[r]]=r+1<o.length?u[o[r]]||(a=o[r+1],n.includes(a)?[]:{}):(()=>{let e=null;if(i){const{methodOrProperty:n,thisObject:r}=((t,e)=>{let n=t;for(let t=0;t<e.length-1;t+=1)n=n[e[t]];return{thisObject:n,methodOrProperty:e.length>0?n[e[e.length-1]]:void 0}})(t,o);"function"==typeof n&&(e=(...t)=>n.apply(r,...t))}return function(){let n;return e&&(n=e(arguments)),(t._ptf=t._ptf||[]).push(o,arguments),n}})()}))})),"complete"==r.readyState?h():(t.addEventListener("DOMContentLoaded",h),t.addEventListener("load",h))}(window,document,navigator,top,window.crossOriginIsolated);;(e=>{e.addEventListener("astro:before-swap",e=>{let r=document.body.querySelector("iframe[src*='/~partytown/']");if(r)e.newDocument.body.append(r)})})(document);</script></head> <body> <header class="sticky top-0 left-0 right-0 bg-white z-10"> <nav> <a href="/" class="nav-icon sm:hidden"> <svg viewBox="0 0 24 24"> <path d="M12 0l-12 12h4v12h5v-8h6v8h5v-12h4z"></path> </svg> </a>  <a href="/" class="brand hidden sm:block"> Violentmonkey </a> <span class="flex-1"></span> <div class="overflow-auto min-w-0 flex whitespace-no-wrap"> <a class="nav-item " href="/get-it/"> Get it </a><a class="nav-item " href="/guide/creating-a-userscript/"> Guide </a><a class="nav-item " href="/api/gm/"> API </a><a class="nav-item " href="/faq/"> FAQ </a><a class="nav-item active" href="/posts/"> Blog </a> </div> </nav> <div class="w-full h-px"> <div class="w-full h-full origin-left bg-yellow-500 scale-x-0" data-scroll-indicator></div> </div> <script type="module" src="/_astro/ScrollIndicator.astro_astro_type_script_index_0_lang.0f22gRsq.js"></script> </header> <div class="relative z-0">  <main class="has-sidebar">  <h1 class="grid-col-start-2 mt-0 pt-8">Smart rules for blacklist</h1> <div class="toc grid-col-start-3 grid-row-start-2"><ul><li style="--toc-depth:0"><a href="#blacklist-use-cases">Blacklist use cases</a></li><li style="--toc-depth:0"><a href="#blacklist-patterns">Blacklist patterns</a></li><li style="--toc-depth:0"><a href="#whitelist-patterns">Whitelist patterns</a></li></ul><hr class="lg:hidden"></div><script type="module" src="/_astro/ToC.astro_astro_type_script_index_0_lang.Cc0lKERm.js"></script> <section class="grid-col-start-2"> <article class="flex-1 min-w-0">  <p>Userscripts are injected into web pages according to predefined rules. However, the rules do not always satisfy users for different reasons. In such cases, we need blacklist to exclude some web pages for all scripts.</p>
+<h3 id="blacklist-use-cases">Blacklist use cases</h3>
+<ul>
+<li>
+<p>hostnames</p>
+<p>In most cases, we may want to add simply hostnames to exclude.</p>
+</li>
+<li>
+<p><code>@exclude-match</code> rules</p>
+<p>Since match patterns are safer to match URLs, we prefer to use <code>@exclude-match</code> rules to exclude URLs more flexibly.</p>
+</li>
+<li>
+<p><code>@exclude</code> rules</p>
+<p>They are commonly supported by userscripts, so we should just keep them work.</p>
+</li>
+</ul>
+<h3 id="blacklist-patterns">Blacklist patterns</h3>
+<p>Taken all use cases into account, the blacklist may have following patterns:</p>
+<ul>
+<li>
+<p>hostnames</p>
+<p>A string without slashes, e.g. <code>example.com</code>, <code>*.example.com</code>.</p>
+</li>
+<li>
+<p><a href="https://developer.chrome.com/extensions/match_patterns">match patterns</a></p>
+<p>A string with scheme, hostname and pathname patterns, e.g. <code>*://*/*</code>, <code>https://www.google.com/</code>.</p>
+</li>
+<li>
+<p><a href="https://wiki.greasespot.net/Include_and_exclude_rules"><code>@exclude</code> rules</a></p>
+<p>A string prefixed with <code>@exclude </code>, e.g. <code>@exclude https://*</code>.</p>
+</li>
+<li>
+<p>comments</p>
+<p>A string starting with <code>#</code>, will be ignored.</p>
+</li>
+</ul>
+<p>Here is a full example for blacklist:</p>
+<pre><code># hostnames
+www.google.com
+
+# @exclude-match rules
+*://twitter.com/*
+
+# @exclude rules
+@exclude https://example.com/*
+</code></pre>
+<h3 id="whitelist-patterns">Whitelist patterns</h3>
+<p>For some people who want to disable Violentmonkey for most websites, a whitelist is needed.</p>
+<p>To work as a whitelist, we can use following patterns:</p>
+<ul>
+<li>
+<p><a href="https://developer.chrome.com/extensions/match_patterns"><code>@match</code> rules</a></p>
+<p>A string prefixed with <code>@match </code>, and followed by a match pattern, e.g. <code>@match https://www.google.com/*</code>.</p>
+</li>
+<li>
+<p><a href="https://wiki.greasespot.net/Include_and_exclude_rules"><code>@include</code> rules</a></p>
+<p>A string prefixed with <code>@include </code>, e.g. <code>@include https://*</code>.</p>
+</li>
+</ul>
+<p>If any of the rules above are matched, the URL bypasses the blacklist.
+To make it a whitelist, we should block all other URLs by a rule at the end: <code>*</code>.</p>
+<p>Here is a full example for whitelist:</p>
+<pre><code># match rules
+@match https://www.google.com/*
+
+# include rules
+@include https://example.com/*
+
+# block everything else
+*
+</code></pre>  </article> </section> <section class="grid-col-start-2"> <hr> <div class="mb-6 font-italic">
+Published on  <time datetime="2017-04-15T21:44:21.000Z"> April 15, 2017 </time> </div> </section> </main>  </div> <footer class="flex p-6 pb-16 border-t border-gray-400 lg:pb-6"> <div>Violentmonkey © All rights reserved.</div> <a class="mx-2" href="/privacy/"> Privacy Policy </a> </footer> <div data-discord data-astro-cid-mahorubk> <div class="discord-panel" data-astro-cid-mahorubk> <div class="p-2 cursor-pointer" data-discord-toggle data-astro-cid-mahorubk> <svg viewBox="0 0 12 12" class="w-4 h-4" data-astro-cid-mahorubk> <path d="M0 1L11 12L12 11L1 0zM11 0L0 11L1 12L12 1z" stroke="none" fill="currentColor" data-astro-cid-mahorubk></path> </svg> </div> <iframe class="w-full h-full bg-blue-100 rounded" data-src="https://discord.com/widget?id=995346102003965952&theme=dark" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" data-astro-cid-mahorubk></iframe> </div> <button class="discord-button" data-discord-toggle data-astro-cid-mahorubk> Open Chat </button> </div> <script type="module">const e=document.querySelector("[data-discord]");e&&e.addEventListener("click",r=>{if(!r.target.closest("[data-discord-toggle]"))return;e.classList.toggle("discord-open");const t=e.querySelector("iframe[data-src]");t&&!t.src&&t.dataset.src&&(t.src=t.dataset.src)});</script>  </body></html>

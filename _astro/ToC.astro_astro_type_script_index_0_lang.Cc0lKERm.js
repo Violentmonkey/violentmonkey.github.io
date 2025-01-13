@@ -1,0 +1,1 @@
+import{o as i}from"./scroller.CbJqCWlR.js";let e;i(()=>{const t=[...document.querySelectorAll(".toc li")].reverse().find(r=>{const c=r.querySelector("a")?.getAttribute("href"),o=(c?document.querySelector(c):void 0)?.getBoundingClientRect();return o&&o.top<=64});e!==t&&(e&&(e.className=""),e=t,e&&(e.className="active"))});

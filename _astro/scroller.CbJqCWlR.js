@@ -1,0 +1,1 @@
+const o=()=>{};let t=!1;try{const e=Object.defineProperty({},"passive",{get(){t=!0}});window.addEventListener("scroll",o,e),window.removeEventListener("scroll",o,e)}catch{}const s=t?{passive:!0}:!1;function n(e){return window.addEventListener("scroll",e,s),()=>window.removeEventListener("scroll",e)}export{n as o};
